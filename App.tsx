@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import TolkenDisplay from './src/components/TolkenDisplay';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text style={styles.title}>Token</Text>
+      <TolkenDisplay/>
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +16,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#333',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    color: '#fff',
+    fontSize: 25
+  }
+
+
 });
